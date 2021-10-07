@@ -1,0 +1,280 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+  
+  /* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+display: block; }
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+input {
+    font-family: inherit; /* 1 */
+    font-size: inherit; /* 1 */
+    line-height: inherit; /* 1 */
+    margin: 0; /* 2 */
+}
+body {
+line-height: 1; }
+
+ol, ul {
+list-style: none; }
+
+blockquote, q {
+quotes: none; }
+
+blockquote {
+&:before, &:after {
+    content: '';
+    content: none; } }
+
+q {
+&:before, &:after {
+    content: '';
+    content: none; } }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+@font-face{
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #343539;
+    color: #FFFFFF;
+    font-family: Helvetica Neue;
+    display: flex;
+    justify-content: center;
+
+}
+.header {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.container2 {
+    height: 102px;
+    width: 308px;
+    margin: 128px 0 0 0;
+    &__help {
+        padding: 24px;
+        font-size: 13px;
+        line-height: 17.89px;
+        background-color: #4B4B4F;
+    }
+}
+h2 {
+    font-size: 24px;
+    margin:0 0 16px 5px
+}
+input {
+    display: flex;
+    height: 44px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1rem
+
+}
+select {
+    background: white;
+    display: block;
+    width: 100%;
+    color: #000000;
+    font-size: 13px;
+    line-height: 17.89px;
+    font-weight: normal;
+    padding: 13px 10px 13px 14px;
+    height: 44px;
+    vertical-align: top;
+    outline: 0;
+    appearance: none;
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        border: solid 1px grey;
+}
+}
+img{
+    position: absolute;
+    z-index: -1;
+}
+p {
+    margin-bottom: 8px;
+}
+.container {
+    min-width: 343px;
+    margin: 16px;
+    padding-top: 40px;
+    font-weight: normal;
+    max-width: 728px;
+    &__marsh {
+        margin-bottom: 40px;
+        &_h {
+            font-size: 24px;
+        }
+    }
+
+    &__transp {
+        margin-bottom: 40px;
+        &_all {
+            display: flex;
+        }
+        &_gp {
+            font-size: 13px;
+            width: 172px;
+            height: 68px;
+            margin-right: 12px;
+        }
+        &_sp {
+            font-size: 13px;
+            width: 172px;
+        }
+    }
+
+    &__gruz {
+        margin-bottom: 40px;
+        &_h {
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        &_type {
+            font-size: 13px;
+            width: 356px;
+        }
+
+        &_class {
+            margin-top: 12px;
+            display: flex;
+            font-size: 13px;
+        }
+
+        &_cost {
+            font-size: 13px;
+            width: 172px;
+        }
+
+        &_temper {
+            font-size: 13px;
+            width: 172px;
+            margin-right: 12px;
+        }
+
+        &_temperT {
+            margin-top: 10px;
+            font-size: 13px;
+            align-items: center;
+        }
+        &_temperG {
+
+            flex-grow: 0;
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
+            margin-bottom: 10px;
+            border-radius: 0.5rem;
+            color:#343539;
+        }
+        &_temperf {
+            font-size: 13px;
+            display: none;
+            width: 356px;
+            justify-content: space-between;
+            flex-grow: 0;
+        }
+    }
+
+    &__vremya {
+        margin-bottom: 40px;
+        &_h {
+            position: relative;
+        }
+
+        &_when {
+            font-size: 13px;
+            background-color: #4B4B4F;
+            border: none;
+            color: white;
+            height: 20px;
+            margin-top: 10px;
+        }
+        &_place {
+            height: 44px;
+            margin: 2px;
+            background-color: #4B4B4F;
+            display: flex;
+            align-items: center;
+            
+        } 
+        &_comment {
+            height: 80px;
+            font-size: 13px;    
+            resize: none;
+        }
+    }
+}
+button{
+    height: 24px;
+    font-size: 11px;
+    width: 119px;
+    margin-right: 10px;
+    color: #FFFFFF;
+    background-color: #717174;
+    border: none;
+}
+.crc{
+    z-index: 2;
+    position: static;
+    margin: 10px;
+}
+.when {
+    display: flex;
+    justify-content: space-between;
+}
+input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    z-index: -2;
+}
+.container__gruz_temperG+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.container__gruz_temperG+label::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid white;
+    margin-right: 12px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+.container__gruz_temperG:checked+label::before {
+    border-color: #EF483E;
+    background-color: #EF483E;
+    background-image: url(../img/shape.svg);
+}
+
+
+

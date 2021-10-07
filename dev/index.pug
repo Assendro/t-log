@@ -1,0 +1,100 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.css")
+        title Тестовое задание
+    body
+        .container 
+            h1.header FTL: Прямая машина
+            .container__marsh
+                img(src="/img/Ell.svg", alt="")
+                h2.container__marsh_h  1  Маршрут
+                p Откуда
+                input(type="text" ) 
+                p Куда 
+                input(type="text" )
+            .container__transp
+                img(src="/img/Ell.svg", alt="")
+                h2.container__transp_h 2 Транспорт
+                .container__transp_all
+                    .container__transp_gp
+                        p Грузоподъёмность
+                        select(placeholder="Не выбрана")
+                            option Вариант 1
+                            option Вариант 2
+                            option Вариант 3
+                            option Вариант 4
+                            option Вариант 5
+                    .container__transp_sp
+                        p Способ погрузки
+                        select
+                            option Задняя
+                            option Вариант 1
+                            option Вариант 2
+                            option Вариант 3
+                            option Вариант 4
+                            option Вариант 5
+            .container__gruz
+                img(src="/img/Ell.svg", alt="")
+                h2.container__gruz_h 3 Груз
+                .container__gruz_type
+                    p Тип груза
+                    select
+                        option Вариант 1 
+                        option Вариант 2 
+                        option Вариант 3 
+                        option Вариант 4 
+                        option Вариант 5 
+                .container__gruz_class
+                    .container__gruz_temper
+                        p Класс опасности
+                        select
+                            option Класс 1
+                            option Класс 2
+                            option Класс 3
+                            option Класс 4
+                            option Класс 5
+                    .container__gruz_temper
+                        p  Объявленная ценность, ₽
+                        input(type="number" placeholder="≥ 1" )
+                .container__gruz_temperT
+                    input(type="checkbox" id="checkbox-id" ).container__gruz_temperG
+                    label(for="checkbox-id") Требуется температурный режим
+                    .container__gruz_temperf(id="1" )
+                        .container__gruz_temper
+                            p От, °C
+                            input(type="number")
+                            
+                        .container__gruz_temper
+                            p До, °C
+                            input(type="number")
+            .container__vremya
+                img(src="/img/Ell.svg", alt="")
+                div
+                    h2 4 Время
+                    .container__vremya_h
+                        .when
+                            p Когда прибыть на точку
+                            p 700 км в день
+                        .container__vremya_place
+                            img.crc(src="/img/cirr.svg", alt="")
+                            input.container__vremya_when(type="text" placeholder="Адрес не указан")
+                            button НЕ ВЫБРАНО
+                        .container__vremya_place
+                            img.crc(src="/img/cirw.svg", alt="")
+                            input.container__vremya_when(type="text" placeholder="Адрес не указан")
+                            button НЕ ВЫБРАНО
+                        p Комментарий к заказу
+                        textarea.container__vremya_comment(cols="70" rows="40" name="text" placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу" )
+        .container2 
+            p.container2__help Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.
+        script(src="/js/script.js")
+
+
+
+        
+
+        
